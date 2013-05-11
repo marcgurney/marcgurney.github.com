@@ -32,7 +32,7 @@ p {
 }
 
 .date {
-  
+
 }
 
 .main-nav {
@@ -108,8 +108,12 @@ p.bio {
 }
 
 .cover-holder {
-  max-height: 50%;
+  max-height: 33%;
   overflow: hidden;
+}
+
+.cover-holder img {
+  margin-top: -25%;
 }
 
 .avatar-holder {
@@ -154,10 +158,6 @@ p.bio {
     max-height: 350px;
   }
 
-  .cover-holder img {
-    margin-top: -25%;
-  }
-
   .avatar-holder {
     width: 20%;
     margin-top: -17%;
@@ -165,6 +165,41 @@ p.bio {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .navbar .nav > li > a {
+    padding: 10px 15px;
+    font-size: 11px;
+  }
+
+  h1.blog-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  p.bio {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  .container-narrow {
+    padding: 0 20px;
+  }
+
   h1 {
     font-size: 28px;
     line-height: 36px;
