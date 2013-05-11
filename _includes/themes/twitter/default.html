@@ -15,7 +15,8 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.3.1.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.2.3.1.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
@@ -33,34 +34,52 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="sidebar">
+          <div class="cover-holder">
+            <img src="{{ BASE_PATH }}/images/cover-pic.jpg" />
+          </div>
+          <div class="avatar-holder">
+            <img src="{{ BASE_PATH }}/images/profile-pic.jpg" />
+          </div>
+          <div class="pad">
+            <h1 class="blog-title">{{ site.author.name }}</h1>
+            <p class="bio">Product Designer and General Purpose Hacker <a href="http://marcschaffnergurney.com">http://marcschaffnergurney.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="span8">
+        <div class="navbar main-nav">
+          <div class="navbar-inner">
+            <!-- <a class="brand" href="{{ HOME_PATH }}">{{ site.author.name }}</a> -->
+            <ul class="nav">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% include JB/pages_list %}
+            </ul>
+          </div>
+        </div>
         <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+
+          <div class="content">
+            {{ content }}
+          </div>
+          <hr>
+          <footer>
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+              with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+              and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+            </p>
+          </footer>
+
         </div>
       </div>
     </div>
 
-    <div class="container-narrow">
-
-      <div class="content">
-        {{ content }}
-      </div>
-      <hr>
-      <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-
-    </div>
+    
 
     {% include JB/analytics %}
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.2.3.1.min.js"></script>
   </body>
 </html>
