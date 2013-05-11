@@ -138,6 +138,10 @@ p.bio {
 }
 
 @media (max-width: 768px) {
+  .container-narrow {
+    max-width: none;
+  }
+
   .main-nav {
     margin-top: 2px;
     margin-left: 0;
