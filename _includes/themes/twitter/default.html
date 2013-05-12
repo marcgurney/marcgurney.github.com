@@ -8,7 +8,7 @@
 
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:400italic,700italic,800italic,800,700,400' rel='stylesheet' type='text/css'>
-    
+
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -59,6 +59,7 @@
             <ul class="nav">
               {% assign pages_list = site.pages %}
               {% assign group = 'navigation' %}
+              {% assign order = 'order' %}
               {% include JB/pages_list %}
             </ul>
           </div>

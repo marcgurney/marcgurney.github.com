@@ -13,7 +13,7 @@ a {
 h1 {
   font-size: 36px;
   line-height: 48px;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
 h2 {
@@ -30,6 +30,12 @@ p {
   font-size: 16px;
   line-height: 24px;
   margin: 20px 0;
+}
+
+.page-header {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .meta {
