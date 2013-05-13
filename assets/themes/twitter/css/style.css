@@ -134,7 +134,7 @@ p.bio {
   z-index: 10;
   width: 30%;
   height: auto;
-  margin: -17% 0 0 10px;
+  margin: -25% 0 0 10px;
   overflow: hidden;
   border: 4px solid #f1f1f1;
 }
@@ -145,7 +145,7 @@ p.bio {
 
 .social-links li {
   display: block;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .social-links li a {
@@ -231,7 +231,12 @@ p.bio {
 
   .avatar-holder {
     width: 20%;
-    margin-top: -11%;
+    margin-top: -17%;
+  }
+
+  .social-links li {
+    float: left;
+    margin: 10px 10px 0 0;
   }
 }
 
@@ -264,6 +269,10 @@ p.bio {
   p.bio {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .social-links li a {
+    font-size: 12px;
   }
 }
 
@@ -304,5 +313,9 @@ p.bio {
   p.bio {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .social-links li a {
+    font-size: 12px;
   }
 }
