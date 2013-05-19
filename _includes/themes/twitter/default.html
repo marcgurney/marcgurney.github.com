@@ -36,7 +36,7 @@
 
   </head>
 
-  <body>
+  <body{% if page.full-width %} id="full-width" {% endif %}>
     <div class="row-fluid">
       <div class="span4">
         <div class="sidebar">
@@ -76,7 +76,7 @@
           </div>
           <hr>
           <footer>
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+            <p>&#9825;{{ site.time | date: '%Y' }} {{ site.author.name }}
               with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
               and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
             </p>
