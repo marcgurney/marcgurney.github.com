@@ -290,12 +290,7 @@ p.bio {
     line-height: 36px;
   }
 
-  p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  p.lead {
+  p.lead, p {
     font-size: 18px;
     line-height: 28px;
   }
@@ -305,14 +300,23 @@ p.bio {
     font-size: 11px;
   }
 
+  .cover-holder {
+    max-height: 250px;
+  }
+
+  .avatar-holder {
+    width: 25%;
+    margin-top: -20%;
+  }
+
   h1.blog-title {
     font-size: 22px;
     line-height: 28px;
   }
 
   p.bio {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .social-links li a {
