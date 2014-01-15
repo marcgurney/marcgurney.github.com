@@ -1,0 +1,49 @@
+/* VARIABLES! */
+
+
+/* MIXINS! */
+@mixin set-box-shadow($x:0, $y:0, $blur:0, $spread:0, $color:#000) {
+  -webkit-box-shadow: $x $y $blur $spread $color;
+  -moz-box-shadow: $x $y $blur $spread $color;
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin set-inset-box-shadow($x:0, $y:0, $blur:0, $spread:0, $color:#000) {
+  -webkit-box-shadow: inset $x $y $blur $spread $color;
+  -moz-box-shadow: inset $x $y $blur $spread $color;
+  box-shadow: inset $x $y $blur $spread $color;
+}
+
+@mixin kill-box-shadow() {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@mixin set-rounded-corners($radius:4px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin set-individual-rounded-corners($TLR:4px, $TRR:4px, $BRR:4px, $BLR:4px) {
+  -webkit-border-radius: $TLR $TRR $BRR $BLR;
+  -moz-border-radius: $TLR $TRR $BRR $BLR;
+  border-radius: $TLR $TRR $BRR $BLR;
+}
+
+@mixin set-transition($property:all, $duration:100ms, $easing:linear) {
+  -webkit-transition: $property $duration $easing;
+  -moz-transition: $property $duration $easing;
+  -o-transition: $property $duration $easing;
+  -ms-transition: $property $duration $easing;
+  transition: $property $duration $easing;
+}
+
+@mixin kill-transition() {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
