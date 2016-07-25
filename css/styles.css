@@ -1,1 +1,113 @@
-body{background:url("../img/body-bg.png") 0 0 repeat}h1{color:#222;font-family:"HelveticaNeue-CondensedBold", Helvetica, sans-serif;font-size:48px;margin:50px 0}h2{font-family:"HelveticaNeue-CondensedBold", Helvetica, sans-serif}h3{color:#555;font-family:Georgia, serif;font-size:15px;font-weight:normal;line-height:20px}p{color:#777;font-family:Georgia, serif;font-size:15px;font-weight:normal;line-height:20px;margin-bottom:20px}.item{margin-bottom:30px}.item h3{margin:10px 0 0 0}.item p{margin:0;color:#777;font-family:"Helvetica Neue", Helvetica, sans-serif;font-size:12px;font-weight:normal;line-height:20px}#project .item{margin-bottom:50px}.thumbnail{padding:0;border:3px solid #fff;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:0 1px 3px 0 rgba(0,0,0,0.2);-moz-box-shadow:0 1px 3px 0 rgba(0,0,0,0.2);box-shadow:0 1px 3px 0 rgba(0,0,0,0.2)}.project{margin-bottom:50px;padding-bottom:50px;border-bottom:1px solid rgba(0,0,0,0.1)}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+@font-face {
+  font-family: "Neuzeit";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NeuzeitSLTStd-Book.otf");
+}
+@font-face {
+  font-family: "Neuzeit";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/NeuzeitSLTStd-BookHeavy.otf");
+}
+@font-face {
+  font-family: "Andale Mono";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AndaleMono.ttf");
+}
+body {
+  background: #FAF8F3;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #463C39;
+  text-decoration: none;
+  border-bottom: 1px dotted #463C39;
+}
+a:hover {
+  border-bottom: 1px solid #463C39;
+}
+.content {
+  width: 440px;
+  min-height: 100%;
+  margin: 0;
+  color: #463C39;
+  font-family: "Neuzeit", sans-serif;
+  border-left: 24px solid #DC4527;
+  padding: 0 0 0 48px;
+}
+.content h1 {
+  font-size: 36px;
+  margin: 48px 0 5px;
+  font-weight: bold;
+  color: #DC4527;
+}
+.content h2 {
+  font-size: 17px;
+  margin: 5px 0 50px;
+  font-family: "Andale Mono", monospace;
+  font-weight: normal;
+}
+.content p {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: justify;
+  margin-bottom: 28px;
+}
+.content p.first {
+  margin-top: 80px;
+}
+.content p.first::before {
+  content: "";
+  display: block;
+  width: 75px;
+  margin-bottom: 14px;
+  border-top: 6px solid #DC4527;
+}
+header {
+  position: relative;
+  height: 28px;
+  padding-top: 18px;
+  font-family: "Andale Mono", monospace;
+  font-size: 11px;
+  border-bottom: 1px solid #DC4527;
+}
+header .email {
+  position: absolute;
+  line-height: 16px;
+}
+header .social {
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+}
+header .social a {
+  border: none;
+}
+footer {
+  position: relative;
+  margin-top: 56px;
+  padding-top: 12px;
+  font-family: "Andale Mono", monospace;
+  font-size: 11px;
+  border-top: 1px solid #DC4527;
+}
+footer .made-in {
+  position: absolute;
+}
+footer .date {
+  position: absolute;
+  right: 0;
+}
