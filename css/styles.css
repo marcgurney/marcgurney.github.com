@@ -124,7 +124,7 @@ footer .date {
   position: absolute;
   right: 0;
 }
-@media (max-width: 540px) {
+@media (max-width: 667px) {
   .content {
     width: auto;
     padding: 0 24px;
