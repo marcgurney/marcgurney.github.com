@@ -124,16 +124,13 @@ footer .date {
   position: absolute;
   right: 0;
 }
-@media (max-width: 667px) {
+@media (max-width: 540px) {
   .content {
     width: auto;
     padding: 0 24px;
   }
   .content::before {
     display: none;
-  }
-  .content p {
-    text-align: left;
   }
   footer {
     width: auto;
