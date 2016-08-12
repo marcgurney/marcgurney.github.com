@@ -132,6 +132,9 @@ footer .date {
   .content::before {
     display: none;
   }
+  .content p {
+    text-align: left;
+  }
   footer {
     width: auto;
     left: 0;
